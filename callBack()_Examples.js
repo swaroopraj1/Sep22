@@ -34,3 +34,18 @@ var Student = {
   
   Display("Swaroop", "Kurnool", "25", Student.data);
   console.log(window.data);
+
+
+//Callback() Example4
+var Breakingbad = {
+  Character: function(firstname, lastname) {
+    this.cast= "Firstname is " + firstname +" and LastName is "+ lastname;
+  }
+};
+function CharData(firstname, lastname, callBackfunc, TVseries) {  
+  callBackfunc.apply(TVseries, [firstname, lastname]);
+}
+CharData ("Walter", "White", Breakingbad.Character, Breakingbad); 
+CharData ("Jesse", "Pinkman", Breakingbad.Character); 
+console.log(Breakingbad.cast);
+console.log(window.cast);
