@@ -33,5 +33,4 @@ var Student = {
   }
   
   Display("Swaroop", "Kurnool", "25", Student.data);
-  //console.log(Student.data); 
   console.log(window.data);
